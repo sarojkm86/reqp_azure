@@ -1,0 +1,41 @@
+{
+	"name": "DestinationDataset_puf",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "logdatabase",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "id",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "movie_name",
+				"type": "varchar",
+				"precision": 0,
+				"scale": 0
+			},
+			{
+				"name": "rating",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			},
+			{
+				"name": "release_year",
+				"type": "int",
+				"precision": 10,
+				"scale": 0
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "logs"
+		}
+	}
+}
